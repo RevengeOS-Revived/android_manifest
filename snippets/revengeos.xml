@@ -44,6 +44,7 @@
   </project> 
   <!-- external -->
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="ros" />
+  <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="ros" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ros" groups="pdk" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="ros" />
   <project path="external/RevengeUI-lib" name="RevengeUI-lib" remote="ros" revision="master" />
