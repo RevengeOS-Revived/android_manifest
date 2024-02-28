@@ -22,6 +22,12 @@
   <remove-project name="platform/system/incremental_delivery" />
   <remove-project name="platform/external/arm-optimized-routines" />
 
+  <!-- Misc -->
+  <project path="manifest" name="android_manifest" remote="ros" />
+  <project path="ROMTool" name="ROMTool" remote="ros" >
+    <linkfile src="romtool.sh" dest="romtool" />
+  </project>
+
   <!-- ART -->
   <project path="art" name="android_art" remote="ros" />
 
