@@ -71,7 +71,8 @@
   <project path="external/RevengeUI-lib" name="RevengeUI-lib" remote="ros" revision="master" />
   <project path="external/SimpleWeather" name="SimpleWeather" remote="ros" revision="master" />
   <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="ros" />  
-
+  <project path="external/zlib-ng" name="android_external_zlib-ng" remote="ros" />  
+  
   <!-- device -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ros" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="ros" revision="r11.0-legacy-um" />
