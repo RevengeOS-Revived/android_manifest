@@ -17,7 +17,17 @@
 
   <!-- Remove projects -->
   <remove-project name="platform/build/blueprint" />
+  <remove-project name="platform/external/compiler-rt" />
   <remove-project name="platform/external/guice" />
+  <remove-project name="platform/external/honggfuzz" />
+  <remove-project name="platform/external/libunwind" />
+  <remove-project name="platform/external/openssh" />
+  <remove-project name="platform/external/python/cpython2" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <remove-project name="platform/external/zlib" />
+  <remove-project name="platform/hardware/ril" />
+  <remove-project name="platform/prebuilts/clang/host/linux-x86" />
+  <remove-project name="platform/system/security" />
   <remove-project name="platform/tools/metalava" />
   <remove-project name="platform/system/incremental_delivery" />
   <remove-project name="platform/external/arm-optimized-routines" />
@@ -48,14 +58,20 @@
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project> 
+
   <!-- external -->
   <project path="external/airbnb-lottie" name="android_external_airbnb-lottie" remote="ros" />
   <project path="external/asus/stitchimage" name="android_external_asus_stitchimage" remote="ros" />
   <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="ros" groups="pdk" />
+  <project path="external/compiler-rt" name="android_external_compiler-rt" remote="ros" />
   <project path="external/exfatprogs" name="android_external_exfatprogs" remote="ros" />
+  <project path="external/honggfuzz" name="android_external_honggfuzz" remote="ros" />
+  <project path="external/openssh" name="android_external_openssh" remote="ros" />
+  <project path="external/python/cpython2" name="android_external_python_cpython2" remote="ros" />
   <project path="external/RevengeUI-lib" name="RevengeUI-lib" remote="ros" revision="master" />
   <project path="external/SimpleWeather" name="SimpleWeather" remote="ros" revision="master" />
-  
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="ros" />  
+
   <!-- device -->
   <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="ros" />
   <project path="device/qcom/sepolicy-legacy-um" name="android_device_qcom_sepolicy" remote="ros" revision="r11.0-legacy-um" />
@@ -72,6 +88,7 @@
   <project path="hardware/interfaces" name="android_hardware_interfaces" groups="pdk" remote="ros" />
   <project path="hardware/custom/interfaces" name="android_hardware_custom_interfaces" remote="ros" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="ros" />
+  <project path="hardware/ril" name="android_hardware_ril" remote="ros" />
 
   <!-- libcore -->
   <project path="libcore" name="android_libcore" remote="ros" />
@@ -85,6 +102,9 @@
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="ros" />
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="ros" />
 
+
+  <project name="android_prebuilts_clang_host_linux-x86" path="prebuilts/clang/host/linux-x86" remote="ros" clone-depth="1"/>
+
   <!-- recovery -->
   <project path="bootable/recovery" name="android_bootable_recovery" remote="ros" />
 
@@ -93,6 +113,7 @@
 
   <!-- system --> 
   <project path="system/core" name="android_system_core" remote="ros" />
+  <project path="system/security" name="android_system_security" remote="ros" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="ros" />
   <project path="system/vold" name="android_system_vold" remote="ros" />
 
@@ -102,6 +123,7 @@
   
   <!-- Qualcomm vendor repos -->
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="ros" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_system_bt-commonsys" remote="ros" />
   <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="ros"/>
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,pdk-qcom" remote="ros" />
 </manifest>
