@@ -2,7 +2,7 @@
 <!-- Repos of RevengeOS -->
 <manifest>
   <remote  name="ros"
-           fetch="https://github.com/RevengeOS"
+           fetch="https://github.com/RevengeOS-Revived"
            revision="r11.0" />
 
   <remote  name="devices"
